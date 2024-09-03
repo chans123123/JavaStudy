@@ -1,3 +1,9 @@
 Vector : 1. 삽입 삭제 이동이 쉬운 제네릭 컬렉션 클래스
          2. 자동으로 크기를 조절해 준다.
 Vector는 기본 타입(double, int, char 등..)을 사용할 수 없음
+Vector 주요 method
+1. add() : Vector 맨 뒤에 요소 삽입
+2. capacity(): Vector 용량 확인
+3. size() : Vector 요소 갯수 확인
+4. get(i) : Vector i번째 요소 확인
+5. remove(i) : i번째 요소 삭제 
