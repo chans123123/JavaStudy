@@ -1,1 +1,8 @@
+Vector 클래스와 거의 동일하다. Vector와 달리 스레드 간에 동기화를 지원하지 않는다.
+단일 스레드 일때 Vector보다 더 효과적이다.
 
+주요method
+1. add() : ArrayList에 요소 추가
+  Vecotr 처럼 null 추가 가능
+2. size() : ArrayList의 크기를 확인
+3. capacity() : Vector와 달리 ArrayList에는 없다!
