@@ -9,3 +9,4 @@ Vector 주요 method
 3. size() : Vector 요소 갯수 확인
 4. get(i) : Vector i번째 요소 확인
 5. remove(i) : i번째 요소 삭제 
+6. removeAllElements(); : 모든 요소 삭제
