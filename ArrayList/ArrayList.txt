@@ -6,3 +6,5 @@ Vector 클래스와 거의 동일하다. Vector와 달리 스레드 간에 동�
   Vecotr 처럼 null 추가 가능
 2. size() : ArrayList의 크기를 확인
 3. capacity() : Vector와 달리 ArrayList에는 없다!
+4. remove() : 요소 삭제
+5. clear() : 전체 삭제
