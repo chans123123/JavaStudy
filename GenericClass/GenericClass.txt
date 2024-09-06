@@ -3,4 +3,4 @@
   - ClassName<Integer> className = new ClassName<>();
 Method : 매개변수랑 같은 타입을 사용해야됨!
   - Ex) set(Integer value) {};
-제네릭 클래스 내에 객체 생성X
+제네릭 클래스 내에 제네릭타입 객체 생성X
