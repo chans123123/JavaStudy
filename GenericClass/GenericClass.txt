@@ -1,0 +1,5 @@
+제네릭 클래스이름<T> : T는 매개변수로 제네릭클래스를 사용할때 매개변수에 구체적인 Type을 적는다.
+  - Ex) Integer, String...
+  - ClassName<Integer> className = new ClassName<>();
+Method : 매개변수랑 같은 타입을 사용해야됨!
+  - Ex) set(Integer value) {};
