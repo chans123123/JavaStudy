@@ -16,3 +16,8 @@ public class Dictionary {
         System.out.println("현제 " + vector.size() + "개의 단어가들어가 잇습니다.");
         QuizStart();
     } // run end
+    void QuizStart() {
+        while (true) {
+            int num = (int)(Math.random() * vector.size());
+            String question = vector.get(num).getKey();
+            System.out.println(question + "?");
