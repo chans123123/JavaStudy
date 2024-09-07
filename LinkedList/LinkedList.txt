@@ -1,3 +1,7 @@
 Vector와 ArrayList와 거의 비슷하다
  - 요소들끼리 연결되어 있는 것 빼고
-
+Collections 클래스는 유용한 메소드가 많다!
+-sort() : 정렬
+-reverse() : 반대로 정렬
+-max, min : 최댓값, 최솟값
+-binarySearch : 이진탐색
