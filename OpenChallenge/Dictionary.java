@@ -33,3 +33,14 @@ public class Dictionary {
                 System.out.println(word + " 프로그렘을 종료합니다");
                 break;
             } //if end
+            else {
+                 if (question.equals(vector.get(answer-1).getKey())) {
+                     System.out.println("Excellent !!");
+                 }
+                 else {
+                     System.out.println("No. !!");
+                 }
+            }//else end
+        }// while end
+    }// QuizStart end
+}
