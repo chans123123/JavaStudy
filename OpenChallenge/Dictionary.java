@@ -21,3 +21,15 @@ public class Dictionary {
             int num = (int)(Math.random() * vector.size());
             String question = vector.get(num).getKey();
             System.out.println(question + "?");
+            
+            for (int i = 0; i < 4; i++) {
+                System.out.print("(" + (i + 1) + ")" + vector.get(i).getValue());
+            }
+
+            System.out.print(" :>");
+            int answer = scanner.nextInt();
+
+            if (answer == -1) {
+                System.out.println(word + " 프로그렘을 종료합니다");
+                break;
+            } //if end
