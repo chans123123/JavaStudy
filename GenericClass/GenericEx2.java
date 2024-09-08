@@ -38,6 +38,16 @@ public class GenericStackEx<T> {
         genericStackEx.pushStack(1);
         genericStackEx.pushStack(3);
         genericStackEx.pushStack(5);
+        
+        Stack<Integer> integerStack = new Stack<Integer>();
+        for (int i = 0; i < 5; i++) {
+            integerStack.push(i);
+        }
+        integerStack = reverseStack(integerStack);
+
+        for (int i = 0; i < 5; i++) {
+            System.out.println(integerStack.pop());
+        }
 
         for (int i = 0; i < 3; i++) {
             genericStackEx.popStack();
