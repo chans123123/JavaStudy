@@ -14,3 +14,19 @@ public class P3 {
             if (nation.equals("그만")) {
                 break;
             }
+            int population = scanner.nextInt();
+            hashMap.put(nation, population);
+        } // while end
+        while (true) {
+            System.out.print("인구 검색>> ");
+            String nation = scanner.next();
+            if (nation.equals("그만")) {
+                break;
+            }
+            if (hashMap.get(nation) == null) {
+                System.out.println(nation + " 나라는 없습니다.");
+            }
+            else {
+                System.out.println(nation + "의 인구는 " + hashMap.get(nation));
+            }
+        }//while end
