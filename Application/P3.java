@@ -30,3 +30,5 @@ public class P3 {
                 System.out.println(nation + "의 인구는 " + hashMap.get(nation));
             }
         }//while end
+    }
+}
