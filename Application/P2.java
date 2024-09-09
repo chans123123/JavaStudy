@@ -23,3 +23,7 @@ public class P2 {
             } else if (score.equals("F") || score.equals("f")) {
                 total_score += 0.0;
             }
+        } //for end
+        System.out.println(total_score / arrayList.size());
+    }
+}
