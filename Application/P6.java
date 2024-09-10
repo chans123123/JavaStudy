@@ -36,3 +36,14 @@ public class P6 {
             Location location = new Location(gyeong, wee);
             hashMap.put(city, location);
         }
+        System.out.println("----------------------");
+        Set<String> keys = hashMap.keySet();
+        Iterator<String> it = keys.iterator();
+        while (it.hasNext()) {
+            String city = it.next();
+            Location location = hashMap.get(city);
+            System.out.println(city + " " + location.getGyoeng() + " " + location.getWee());
+        }
+        System.out.println("--------------");
+    }
+}
