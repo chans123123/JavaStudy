@@ -35,7 +35,7 @@ public class P6 {
 
             Location location = new Location(gyeong, wee);
             hashMap.put(city, location);
-        }
+        }//for end
         System.out.println("----------------------");
         Set<String> keys = hashMap.keySet();
         Iterator<String> it = keys.iterator();
@@ -43,7 +43,7 @@ public class P6 {
             String city = it.next();
             Location location = hashMap.get(city);
             System.out.println(city + " " + location.getGyoeng() + " " + location.getWee());
-        }
+        } //while end
         System.out.println("--------------");
     }
 }
