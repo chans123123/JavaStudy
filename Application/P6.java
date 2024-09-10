@@ -45,5 +45,20 @@ public class P6 {
             System.out.println(city + " " + location.getGyoeng() + " " + location.getWee());
         } //while end
         System.out.println("--------------");
+        while (true) {
+            System.out.print("도시 이름 >> ");
+            BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+            String city = br.readLine();
+            Location location = hashMap.get(city);
+            if (city.equals("그만")) {
+                break;
+            }
+            if (location == null) {
+                System.out.println(city + "는 없습니다.");
+            }
+            else
+                System.out.print(city + " " + location.getGyoeng() + " " + location.getWee());
+                System.out.println();
+        } //while end
     }
 }
