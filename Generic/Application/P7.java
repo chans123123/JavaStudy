@@ -17,3 +17,17 @@ public class Main {
             Double avg = Double.parseDouble(st.nextToken());
             hashMap.put(name, avg);
         }
+        System.out.print("장학생 선발 학점 기준 입력>> ");
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st = new StringTokenizer(br.readLine());
+        double standard = Double.parseDouble(st.nextToken());
+        System.out.print("장학생 명단 : ");
+        Set<String> keys = hashMap.keySet();
+        for (String name : keys) {
+            double score = hashMap.get(name);
+            if (score > standard) {
+                System.out.print(name + " ");
+            }
+        }
+    }
+}
