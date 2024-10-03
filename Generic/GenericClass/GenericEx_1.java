@@ -26,4 +26,23 @@ class GStack<T> {
         tos--;
         return (T)stck[tos]; //Casting 해야됨 Object 타입 -> T으로 [중요!!!!!!!!!!!!!!!]
     }
+}
+public class Mystack {
+    public static void main(String[] args) {
+        GStack<String> stringGStack = new GStack<>(); //string 타입 객체 생성
+        stringGStack.push("seoul");
+        stringGStack.push("busan");
+        stringGStack.push("LA");
+
+        for (int i = 0; i < 3; i++) {
+            System.out.println(stringGStack.pop());
         }
+        GStack<Integer> gStack = new GStack<>(); //integer 타입 객체 생성
+        gStack.push(1);
+        gStack.push(3);
+        gStack.push(5);
+        for (int i = 0; i < 3; i++) {
+            System.out.println(gStack.pop());
+        }
+    }
+}
