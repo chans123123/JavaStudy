@@ -1,6 +1,6 @@
-class Point {
+class Point_2 {
   private int x, y;
-  public Point(int x, int y) {
+  public Point_2(int x, int y) {
     this.x = x;
     this.y = y;
   }

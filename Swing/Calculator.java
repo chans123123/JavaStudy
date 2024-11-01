@@ -16,25 +16,32 @@ public class Calculator extends JFrame {
     }
     class NorthPanel extends JPanel {
         public NorthPanel() {
+            setLayout(new BorderLayout());
             setBackground(Color.pink);
             JLabel jLabel = new JLabel("수식");
+            add(jLabel, BorderLayout.CENTER);
             JTextField jTextField = new JTextField(5);
+            add(jTextField, BorderLayout.CENTER);
             add(jLabel);
             add(jTextField);
         }
     }
     class CenterPanel extends JPanel {
         public CenterPanel() {
+            setBackground(Color.WHITE);
             setLayout(new GridLayout(5,4,5,5));
             String[] buttonLabels = {"C", "UN", "BK", "/",
                                         "7", "8", "9", "x",
                                         "4", "5", "6", "-",
                                         "1", "2", "3", "+",
                                         "0", ".", "=", "%"};
-            for (String s : buttonLabels) {
+            for (int i = 0; i < buttonLabels.length; i++) {
                 JButton jButton = new JButton();
-                jButton.setText(s);
+                jButton.setText(buttonLabels[i]);
                 add(jButton);
+                if (i == 18) {
+                    jButton.setBackground(Color.CYAN);
+                }
             }
         }
     }

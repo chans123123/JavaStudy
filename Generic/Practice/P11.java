@@ -1,7 +1,7 @@
 package Ptactice;
 import java.util.HashMap;
 
-public class P10 {
+public class P11 {
     public static void main(String[] args) {
         HashMap<String, Integer> hashMap = new HashMap<>();
         hashMap.put("a", 10);
